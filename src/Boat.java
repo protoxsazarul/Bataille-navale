@@ -1,6 +1,8 @@
+import java.util.List;
+
 public abstract class Boat {
     private boolean isSinked;
-    private Spot[] boatSpots = new Spot[];
+    private List<Spot> boatSpots;
     private int nbSpots;
 
     public int getNbSpots() {
