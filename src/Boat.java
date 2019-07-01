@@ -1,7 +1,21 @@
-public class Boat extends BoatSpot {
-    private Boolean isSinked;
+public abstract class Boat {
+    private boolean isSinked;
+    private Spot[] boatSpots = new Spot[];
+    private int nbSpots;
 
-    public boolean setIsSinked() {
-        return false;
+    public int getNbSpots() {
+        return nbSpots;
+    }
+
+    public void setNbSpots(int nbSpots) {
+        this.nbSpots = nbSpots;
+    }
+
+    public boolean getSinked() {
+        return isSinked;
+    }
+
+    public void setSinked(boolean sinked) {
+        isSinked = sinked;
     }
 }

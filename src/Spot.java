@@ -1,13 +1,19 @@
-public class Spot extends Grid {
-    private static Boolean isTouched;
-    public static Boolean getIsTouched() {
+import java.util.List;
+
+public abstract class Spot {
+    private static boolean isTouched;
+
+    public static boolean getIsTouched() {
         return isTouched;
     }
 
-    public static void setIsTouched(Boolean isTouched) {
+    public static void setIsTouched(boolean isTouched) {
         Spot.isTouched = isTouched;
     }
 
+    public List<Spot> getSpots() {
+        return null;
+    }
 
 
 }
